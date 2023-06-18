@@ -4,14 +4,14 @@ function App() {
   return (
     <div>
       <header>
-        <a href="" className="flex">
+        <a href="" className="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="w-6 h-6 -rotate-90"
+            className="w-8 h-8 -rotate-90"
           >
             <path
               stroke-linecap="round"
