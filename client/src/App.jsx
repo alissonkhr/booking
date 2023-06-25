@@ -21,7 +21,7 @@ function App() {
           </svg>
           <span className="font-bold text-xl">iTravel</span>
         </a>
-        <div className="flex">
+        <div className="flex border border-gray-300 rounded-full py-2 px-4">
           <div>Anywhere</div>
           <div>Any week</div>
           <div>Add guests</div>
