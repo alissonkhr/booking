@@ -21,20 +21,20 @@ function App() {
           </svg>
           <span className="font-bold text-xl">iTravel</span>
         </a>
-        <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-4">
+        <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
           <div>Anywhere</div>
           <div className="border-l border-gray-300"></div>
           <div>Any week</div>
           <div className="border-l border-gray-300"></div>
           <div>Add guests</div>
-          <button>
+          <button className="bg-primary text-white p-1 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="w-4 h-4"
             >
               <path
                 stroke-linecap="round"
