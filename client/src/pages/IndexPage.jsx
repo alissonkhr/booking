@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function IndexPage() {
   return (
     <div>
@@ -42,7 +44,7 @@ export default function IndexPage() {
             </svg>
           </button>
         </div>
-        <div className="flex items-center gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
+        <Link to={'/login'} className="flex items-center gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -71,7 +73,7 @@ export default function IndexPage() {
               />
             </svg>
           </div>
-        </div>
+        </Link>
       </header>
     </div>
   );
