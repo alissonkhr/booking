@@ -10,6 +10,12 @@ function RegisterPage() {
           <input type="email" placeholder="your@email.com" />
           <input type="password" placeholder="password" />
           <button className="primary">Register</button>
+          <div className="text-center py-2 text-gray-500">
+            Already a member?{" "}
+            <Link className="underline text-black" to={"/login"}>
+              Login
+            </Link>
+          </div>
         </form>
       </div>
     </div>
