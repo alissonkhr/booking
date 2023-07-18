@@ -9,7 +9,7 @@ function RegisterPage() {
 
   function registerUser(ev) {
     ev.preventDefault();
-    axios.get("http://localhost:4000/test");
+    axios.get("/test");
   }
   return (
     <div className="mt-4 grow flex items-center justify-around">
