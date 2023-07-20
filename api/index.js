@@ -11,6 +11,8 @@ app.use(
   })
 );
 
+// mongodb db pw: Do1nJCgC4TuMKTGr
+
 app.get("/test", (req, res) => {
   res.json("test ok");
 });
