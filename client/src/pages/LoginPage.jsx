@@ -4,6 +4,15 @@ import { Link } from "react-router-dom";
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  async function handleLoginSubmit(ev) {
+    ev.preventDefault();
+    try {
+      await axios.post("/login", { email, password });
+      alert("Login successful!");
+    } catch (e) {
+      alert("Login failed.");
+    }
+  }
   return (
     <div className="mt-4 grow flex items-center justify-around">
       <div className="mb-64">
