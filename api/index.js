@@ -38,4 +38,14 @@ app.post("/register", async (req, res) => {
   }
 });
 
+app.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+  const userDoc = await User.findOne({ email });
+  if (userDoc) {
+    res.json("Found!");
+  } else {
+    res.json("Not found.");
+  }
+});
+
 app.listen(4000);
