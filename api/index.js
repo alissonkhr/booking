@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken")
 const User = require("./models/User.js");
 require("dotenv").config();
 
@@ -44,6 +45,7 @@ app.post("/login", async (req, res) => {
   if (userDoc) {
     const passOk = bcrypt.compareSync(password, userDoc.password);
     if (passOk) {
+      //making jwt here
       res.cookie("token", "").json("Password OK!");
     } else {
       res.status(422).json("Password is not correct.");
