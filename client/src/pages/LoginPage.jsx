@@ -5,6 +5,7 @@ import axios from "axios";
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [redirect, setRedirect] = useState("");
   //write a redirect state for the login
   async function handleLoginSubmit(ev) {
     ev.preventDefault();
