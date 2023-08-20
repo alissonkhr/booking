@@ -64,7 +64,8 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/profile", (req, res) => {
-  res.json("user info");
+  const {token} = req.cookies;
+  res.json({token});
 });
 
 app.listen(4000);
