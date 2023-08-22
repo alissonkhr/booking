@@ -68,7 +68,14 @@ app.post("/login", async (req, res) => {
 
 app.get("/profile", (req, res) => {
   const { token } = req.cookies;
-  res.json({ token });
+  if (token) {
+    jwt.verify(token, jwtSecret, {}, (err, user) => {
+      if (err) throw err;
+      res.json(user);
+    });
+  } else {
+    res.json(null);
+  }
 });
 
 app.listen(4000);
