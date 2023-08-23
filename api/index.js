@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("./models/User.js");
-const CookieParser = require("cookie-parser");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
@@ -69,9 +68,10 @@ app.post("/login", async (req, res) => {
 app.get("/profile", (req, res) => {
   const { token } = req.cookies;
   if (token) {
-    jwt.verify(token, jwtSecret, {}, (err, user) => {
+    jwt.verify(token, jwtSecret, {}, async (err, userData) => {
       if (err) throw err;
-      res.json(user);
+      const userDoc = await User.findById(userData.id);
+      res.json(userDoc);
     });
   } else {
     res.json(null);
