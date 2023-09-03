@@ -6,7 +6,6 @@ export default function AccountPage() {
   const { ready, user } = useContext(UserContext);
 
   const { subpage } = useParams();
-  console.log(subpage);
 
   if (!ready) {
     return "Loading...";
@@ -16,19 +15,24 @@ export default function AccountPage() {
     return <Navigate to={"/login"} />;
   }
 
+  function linkClasses(type = null) {
+    let classes = "py-2 px-6";
+    if (type === subpage) {
+      classes += " bg-primary text-white rounded-full";
+    }
+    return classes;
+  }
+
   return (
     <div>
       <nav className="w-full flex justify-center mt-8 gap-2">
-        <Link
-          className="py-2 px-6 bg-primary text-white rounded-full"
-          to={"/account"}
-        >
+        <Link className={linkClasses("profile")} to={"/account"}>
           My Profile
         </Link>
-        <Link className="py-2 px-6" to={"/account/bookings"}>
+        <Link className={linkClasses("bookings")} to={"/account/bookings"}>
           My Bookings
         </Link>
-        <Link className="py-2 px-6" to={"/account/places"}>
+        <Link className={linkClasses("places")} to={"/account/places"}>
           My Accomodations
         </Link>
       </nav>
