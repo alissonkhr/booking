@@ -17,7 +17,7 @@ export default function AccountPage() {
 
   function linkClasses(type = null) {
     let classes = "py-2 px-6";
-    if (type === subpage) {
+    if (type === subpage || (subpage === undefined && type === 'profile')) {
       classes += " bg-primary text-white rounded-full";
     }
     return classes;
