@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { UserContext } from "../UserContext.jsx";
+import axios from "axios";
 
 export default function AccountPage() {
   const { ready, user } = useContext(UserContext);
