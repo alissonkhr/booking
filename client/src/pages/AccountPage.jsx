@@ -59,6 +59,7 @@ export default function AccountPage() {
           </button>
         </div>
       )}
+      {subpage === "places" && <div></div>}
     </div>
   );
 }
