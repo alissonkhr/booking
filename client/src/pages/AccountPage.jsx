@@ -28,7 +28,7 @@ export default function AccountPage() {
   }
 
   function linkClasses(type = null) {
-    let classes = "py-2 px-6";
+    let classes = "inline-flex gap-1 py-2 px-6";
     if (type === subpage) {
       classes += " bg-primary text-white rounded-full";
     }
