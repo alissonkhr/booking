@@ -31,7 +31,11 @@ export default function PlacesPage() {
       {action === "new" && (
         <div>
           <form>
-            <input type="text" placeholder="title, for example: my lovely apartment" />
+            <input
+              type="text"
+              placeholder="title, for example: my lovely apartment"
+            />
+            <input type="text" placeholder="address" />
           </form>
         </div>
       )}
