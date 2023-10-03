@@ -32,6 +32,10 @@ export default function PlacesPage() {
         <div>
           <form>
             <h2 className="text-2xl mt-4">Title</h2>
+            <p className="text-gray-500 text-sm">
+              The title for your place should be catchy, remember to advertise
+              it well!
+            </p>
             <input
               type="text"
               placeholder="title, for example: my lovely apartment"
