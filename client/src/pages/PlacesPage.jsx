@@ -41,6 +41,7 @@ export default function PlacesPage() {
               placeholder="title, for example: my lovely apartment"
             />
             <h2 className="text-2xl mt-4">Address</h2>
+            <p className="text-gray-500 text-sm">The address for your place.</p>
             <input type="text" placeholder="address" />
             <h2 className="text-2xl mt-4">Photos</h2>
           </form>
