@@ -45,6 +45,7 @@ export default function PlacesPage() {
             <input type="text" placeholder="address" />
             <h2 className="text-2xl mt-4">Photos</h2>
             <p className="text-gray-500 text-sm">The more the better!</p>
+            <button className="border bg-transparent rounded-2xl p-4">+</button>
           </form>
         </div>
       )}
