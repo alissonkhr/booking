@@ -45,9 +45,9 @@ export default function PlacesPage() {
             <input type="text" placeholder="address" />
             <h2 className="text-2xl mt-4">Photos</h2>
             <p className="text-gray-500 text-sm">The more the better!</p>
-            <div>
+            <div className="flex">
               <input type="text" placeholder={'Add using a link ...jpg'} />
-              <button>Add Photo</button>
+              <button className="bg-gray-200 grow">Add&nbsp;Photo</button>
             </div>
             <div className="mt-2 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               <button className="border bg-transparent rounded-2xl p-8 text-2xl text-gray-600">
