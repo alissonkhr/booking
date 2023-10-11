@@ -70,6 +70,8 @@ export default function PlacesPage() {
                 Upload
               </button>
             </div>
+            <h2 className="text-2xl mt-4">Description</h2>
+            <p className="text-gray-500 text-sm">Tell the guests all about your place!</p>
           </form>
         </div>
       )}
