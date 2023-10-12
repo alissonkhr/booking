@@ -73,6 +73,8 @@ export default function PlacesPage() {
             <h2 className="text-2xl mt-4">Description</h2>
             <p className="text-gray-500 text-sm">Tell the guests all about your place!</p>
           <textarea />
+          <h2 className="text-2xl mt-4">Perks</h2>
+            <p className="text-gray-500 text-sm">All the perks for your place!</p>
           </form>
         </div>
       )}
