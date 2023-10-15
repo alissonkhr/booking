@@ -78,23 +78,23 @@ export default function PlacesPage() {
             <div>
               <label>
                 <input type="checkbox"/>
-                <span>Perk 1</span>
+                <span>WiFi</span>
               </label>
               <label>
                 <input type="checkbox"/>
-                <span>Perk 2</span>
+                <span>Free Parking</span>
               </label>
               <label>
                 <input type="checkbox"/>
-                <span>Perk 3</span>
+                <span>TV/Cable</span>
               </label>
               <label>
                 <input type="checkbox"/>
-                <span>Perk 4</span>
+                <span>Pet Friendly</span>
               </label>
               <label>
                 <input type="checkbox"/>
-                <span>Perk 5</span>
+                <span>Private Entrance</span>
               </label>
             </div>
           </form>
