@@ -71,29 +71,47 @@ export default function PlacesPage() {
               </button>
             </div>
             <h2 className="text-2xl mt-4">Description</h2>
-            <p className="text-gray-500 text-sm">Tell the guests all about your place!</p>
-          <textarea />
-          <h2 className="text-2xl mt-4">Perks</h2>
-            <p className="text-gray-500 text-sm">Choose all the perks for your place!</p>
+            <p className="text-gray-500 text-sm">
+              Tell the guests all about your place!
+            </p>
+            <textarea />
+            <h2 className="text-2xl mt-4">Perks</h2>
+            <p className="text-gray-500 text-sm">
+              Choose all the perks for your place!
+            </p>
             <div>
               <label>
-                <input type="checkbox"/>
+                <input type="checkbox" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                  />
+                </svg>
                 <span>WiFi</span>
               </label>
               <label>
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <span>Free Parking</span>
               </label>
               <label>
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <span>TV/Cable</span>
               </label>
               <label>
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <span>Pet Friendly</span>
               </label>
               <label>
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <span>Private Entrance</span>
               </label>
             </div>
