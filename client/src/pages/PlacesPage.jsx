@@ -79,8 +79,8 @@ export default function PlacesPage() {
             <p className="text-gray-500 text-sm">
               Choose all the perks for your place!
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+            <div className="grid mt-2 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function PlacesPage() {
                 </svg>
                 <span>WiFi</span>
               </label>
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ export default function PlacesPage() {
                 </svg>
                 <span>Self Check-in</span>
               </label>
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ export default function PlacesPage() {
                 </svg>
                 <span>Free Parking</span>
               </label>
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ export default function PlacesPage() {
                 </svg>
                 <span>TV/Cable</span>
               </label>
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ export default function PlacesPage() {
                 </svg>
                 <span>Pet Friendly</span>
               </label>
-              <label classname="border p-4 flex rounded-2xl gap-2 items-center">
+              <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
