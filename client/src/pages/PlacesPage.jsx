@@ -189,6 +189,10 @@ export default function PlacesPage() {
                 <span>Private Entrance</span>
               </label>
             </div>
+            <h2 className="text-2xl mt-4">Extra Info</h2>
+            <p className="text-gray-500 text-sm">
+              House rules, etc.
+            </p>
           </form>
         </div>
       )}
