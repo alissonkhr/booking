@@ -193,6 +193,7 @@ export default function PlacesPage() {
             <p className="text-gray-500 text-sm">
               House rules, etc.
             </p>
+            <textarea />
           </form>
         </div>
       )}
