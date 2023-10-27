@@ -194,6 +194,7 @@ export default function PlacesPage() {
               House rules, etc.
             </p>
             <textarea />
+            <h2 className="text-2xl mt-4">Check In/Out Times, Max # of Guests</h2>
           </form>
         </div>
       )}
