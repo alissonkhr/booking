@@ -194,7 +194,10 @@ export default function PlacesPage() {
               House rules, etc.
             </p>
             <textarea />
-            <h2 className="text-2xl mt-4">Check In/Out Times, Max # of Guests</h2>
+            <h2 className="text-2xl mt-4">Check In/Out Times</h2>
+            <p className="text-gray-500 text-sm">
+              Here you can add the check in & check out times. Remember to leave some time window for cleaning the room between guests!
+            </p>
           </form>
         </div>
       )}
