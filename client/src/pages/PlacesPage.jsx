@@ -207,6 +207,10 @@ export default function PlacesPage() {
                 <h3>Check Out Time</h3>
                 <input type="text" placeholder="9:00" />
               </div>
+              <div>
+                <h3>Max # of Guests</h3>
+                <input type="text" placeholder="4" />
+              </div>
             </div>
           </form>
         </div>
