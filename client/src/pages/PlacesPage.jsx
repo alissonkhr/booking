@@ -198,7 +198,7 @@ export default function PlacesPage() {
             <p className="text-gray-500 text-sm">
               Here you can add the check in & check out times. Remember to leave some time window for cleaning the room between guests!
             </p>
-            <div>
+            <div className="grid gap-2 sm:grid-cols-3">
               <div>
                 <h3>Check In Time</h3>
                 <input type="text" placeholder="14:00" />
