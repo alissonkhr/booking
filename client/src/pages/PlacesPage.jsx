@@ -200,15 +200,15 @@ export default function PlacesPage() {
             </p>
             <div className="grid gap-2 sm:grid-cols-3">
               <div>
-                <h3>Check In Time</h3>
+                <h3 className="mt-2 -mb-1">Check In Time</h3>
                 <input type="text" placeholder="14:00" />
               </div>
               <div>
-                <h3>Check Out Time</h3>
+                <h3 className="mt-2 -mb-1">Check Out Time</h3>
                 <input type="text" placeholder="9:00" />
               </div>
               <div>
-                <h3>Max # of Guests</h3>
+                <h3 className="mt-2 -mb-1">Max # of Guests</h3>
                 <input type="text" placeholder="4" />
               </div>
             </div>
