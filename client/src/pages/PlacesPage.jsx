@@ -212,6 +212,9 @@ export default function PlacesPage() {
                 <input type="text" placeholder="4" />
               </div>
             </div>
+            <div>
+              <button>Save</button>
+            </div>
           </form>
         </div>
       )}
