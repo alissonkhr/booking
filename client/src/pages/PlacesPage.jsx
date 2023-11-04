@@ -213,7 +213,7 @@ export default function PlacesPage() {
               </div>
             </div>
             <div>
-              <button>Save</button>
+              <button className="primary">Save</button>
             </div>
           </form>
         </div>
