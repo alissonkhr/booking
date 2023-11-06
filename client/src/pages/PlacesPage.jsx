@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 export default function PlacesPage() {
   const { action } = useParams();
+  const [title, setTitle] = useState("");
   return (
     <div>
       {action !== "new" && (
@@ -190,13 +191,12 @@ export default function PlacesPage() {
               </label>
             </div>
             <h2 className="text-2xl mt-4">Extra Info</h2>
-            <p className="text-gray-500 text-sm">
-              House rules, etc.
-            </p>
+            <p className="text-gray-500 text-sm">House rules, etc.</p>
             <textarea />
             <h2 className="text-2xl mt-4">Check In/Out Times</h2>
             <p className="text-gray-500 text-sm">
-              Here you can add the check in & check out times. Remember to leave some time window for cleaning the room between guests!
+              Here you can add the check in & check out times. Remember to leave
+              some time window for cleaning the room between guests!
             </p>
             <div className="grid gap-2 sm:grid-cols-3">
               <div>
