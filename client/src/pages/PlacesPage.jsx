@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 export default function PlacesPage() {
   const { action } = useParams();
   const [title, setTitle] = useState("");
+  const [address, setAddress] = useState("");
+  
   return (
     <div>
       {action !== "new" && (
