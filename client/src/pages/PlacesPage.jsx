@@ -4,7 +4,7 @@ export default function PlacesPage() {
   const { action } = useParams();
   const [title, setTitle] = useState("");
   const [address, setAddress] = useState("");
-  const [addedPhotos, setAddedPhotos] = useState("");
+  const [addedPhotos, setAddedPhotos] = useState([]);
 
   return (
     <div>
