@@ -6,6 +6,7 @@ export default function PlacesPage() {
   const [address, setAddress] = useState("");
   const [addedPhotos, setAddedPhotos] = useState([]);
   const [photoLink, setPhotoLink] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     <div>
