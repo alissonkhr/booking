@@ -9,6 +9,7 @@ export default function PlacesPage() {
   const [description, setDescription] = useState("");
   const [perks, setPerks] = useState([]);
   const [extraInfo, setExtraInfo] = useState("");
+  const [checkIn, setCheckIn] = useState("");
 
   return (
     <div>
