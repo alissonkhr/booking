@@ -11,7 +11,7 @@ export default function PlacesPage() {
   const [extraInfo, setExtraInfo] = useState("");
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
-  
+  const [maxGuests, setMaxGuests] = useState(1);
 
   return (
     <div>
