@@ -13,6 +13,10 @@ export default function PlacesPage() {
   const [checkOut, setCheckOut] = useState("");
   const [maxGuests, setMaxGuests] = useState(1);
 
+  function inputHeader(text) {
+    return <h2 className="text-2xl mt-4">{text}</h2>;
+  }
+
   return (
     <div>
       {action !== "new" && (
