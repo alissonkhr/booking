@@ -17,6 +17,10 @@ export default function PlacesPage() {
     return <h2 className="text-2xl mt-4">{text}</h2>;
   }
 
+  function inputDescription(text) {
+    return <p className="text-gray-500 text-sm">{text}</p>;
+  }
+
   return (
     <div>
       {action !== "new" && (
