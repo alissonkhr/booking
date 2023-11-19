@@ -21,6 +21,15 @@ export default function PlacesPage() {
     return <p className="text-gray-500 text-sm">{text}</p>;
   }
 
+  function preInput(header, description) {
+    return (
+      <>
+        {inputHeader(header)}
+        {inputDescription(description)}
+      </>
+    );
+  }
+
   return (
     <div>
       {action !== "new" && (
