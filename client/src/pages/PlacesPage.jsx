@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
 
 export default function PlacesPage() {
   const { action } = useParams();
@@ -59,11 +60,7 @@ export default function PlacesPage() {
       {action === "new" && (
         <div>
           <form>
-            <h2 className="text-2xl mt-4">Title</h2>
-            <p className="text-gray-500 text-sm">
-              The title for your place should be catchy, remember to advertise
-              it well!
-            </p>
+          {preInput('Title', 'The title for your place should be catchy, remember to advertise it well!')}
             <input
               type="text"
               placeholder="title, for example: my lovely apartment"
