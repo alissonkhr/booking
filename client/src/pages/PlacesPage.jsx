@@ -60,16 +60,17 @@ export default function PlacesPage() {
       {action === "new" && (
         <div>
           <form>
-          {preInput('Title', 'The title for your place should be catchy, remember to advertise it well!')}
+            {preInput(
+              "Title",
+              "The title for your place should be catchy, remember to advertise it well!"
+            )}
             <input
               type="text"
               placeholder="title, for example: my lovely apartment"
             />
-            <h2 className="text-2xl mt-4">Address</h2>
-            <p className="text-gray-500 text-sm">The address for your place.</p>
+            {preInput("Address", "The address for your place.")}
             <input type="text" placeholder="address" />
-            <h2 className="text-2xl mt-4">Photos</h2>
-            <p className="text-gray-500 text-sm">The more the better!</p>
+            {preInput("Photos", "The more the better!")}
             <div className="flex gap-2">
               <input type="text" placeholder={"Add using a link ...jpg"} />
               <button className="bg-gray-200 px-4 rounded-2xl">
@@ -95,15 +96,9 @@ export default function PlacesPage() {
                 Upload
               </button>
             </div>
-            <h2 className="text-2xl mt-4">Description</h2>
-            <p className="text-gray-500 text-sm">
-              Tell the guests all about your place!
-            </p>
+            {preInput("Description", "Tell the guests all about your place!")}
             <textarea />
-            <h2 className="text-2xl mt-4">Perks</h2>
-            <p className="text-gray-500 text-sm">
-              Choose all the perks for your place!
-            </p>
+            {preInput("Perks", "Choose all the perks for your place!")}
             <div className="grid mt-2 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
               <label className="border p-4 flex rounded-2xl gap-2 items-center cursor-pointer">
                 <input type="checkbox" />
@@ -214,14 +209,12 @@ export default function PlacesPage() {
                 <span>Private Entrance</span>
               </label>
             </div>
-            <h2 className="text-2xl mt-4">Extra Info</h2>
-            <p className="text-gray-500 text-sm">House rules, etc.</p>
+            {preInput("Extra Info", "House rules, etc.")}
             <textarea />
-            <h2 className="text-2xl mt-4">Check In/Out Times</h2>
-            <p className="text-gray-500 text-sm">
-              Here you can add the check in & check out times. Remember to leave
-              some time window for cleaning the room between guests!
-            </p>
+            {preInput(
+              "Check In/Out Times",
+              "Here you can add the check in & check out times. Remember to leave some time window for cleaning the room between guests!"
+            )}
             <div className="grid gap-2 sm:grid-cols-3">
               <div>
                 <h3 className="mt-2 -mb-1">Check In Time</h3>
