@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
+import Perks from "../Perks";
 
 export default function PlacesPage() {
   const { action } = useParams();
@@ -100,7 +101,7 @@ export default function PlacesPage() {
             <textarea />
             {preInput("Perks", "Choose all the perks for your place!")}
             <div className="grid mt-2 gap-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-              
+              <Perks />
             </div>
             {preInput("Extra Info", "House rules, etc.")}
             <textarea />
