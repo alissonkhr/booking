@@ -32,6 +32,8 @@ export default function PlacesPage() {
     );
   }
 
+  function addPhotoByLink() {}
+
   return (
     <div>
       {action !== "new" && (
