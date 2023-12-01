@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import Perks from "../Perks";
 
@@ -32,7 +33,9 @@ export default function PlacesPage() {
     );
   }
 
-  function addPhotoByLink() {}
+  async function addPhotoByLink() {
+    await axios.post("/upload-by-link", { link: photoLink });
+  }
 
   return (
     <div>
