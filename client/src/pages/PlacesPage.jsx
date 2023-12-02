@@ -91,7 +91,7 @@ export default function PlacesPage() {
                 onChange={(ev) => setPhotoLink(ev.target.value)}
                 placeholder={"Add using a link ...jpg"}
               />
-              <button className="bg-gray-200 px-4 rounded-2xl">
+              <button onClick={addPhotoByLink} className="bg-gray-200 px-4 rounded-2xl">
                 Add&nbsp;Photo
               </button>
             </div>
