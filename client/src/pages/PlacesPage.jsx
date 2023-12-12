@@ -112,7 +112,7 @@ export default function PlacesPage() {
                     <img className="rounded-2xl" src={"http://localhost:4000/uploads/" + link} alt="A Place" />
                   </div>
                 ))}
-              <button className="flex justify-center gap-1 border bg-transparent rounded-2xl p-8 text-2xl text-gray-600">
+              <button className="flex items-center justify-center gap-1 border bg-transparent rounded-2xl p-2 text-2xl text-gray-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
